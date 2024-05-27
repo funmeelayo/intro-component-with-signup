@@ -31,16 +31,28 @@
         <h4>Try it free 7 days<span> then $20/mo. thereafter</span></h4>
         <form action="" id="form">
           <label for="firstName">
+            <div class="error_icon hide">!</div>
+           <i>  <p class="error_text hide">First Name cannot be empty</p></i>
             <input type="text" class="firstName" placeholder="First Name" />
+            
           </label>
           <label for="lastName">
+            <div class="error_icon hide">!</div>
+           <i>  <p class="error_text hide"> Last Name cannot be empty</p></i>
             <input type="text" class="lastName" placeholder="Last Name" />
           </label>
           <label for="email">
+            <div class="error_icon hide">!</div>
+            <i> <p class="error_text hide"> Looks like this is not an email  </p></i>
             <input type="email" class="email" placeholder="Email" />
           </label>
           <label for="password">
-            <input type="password" class="password" placeholder="Password" />
+            <div class="reveal_password ">0</div>
+            <div class="error_icon hide">!</div>
+            <i>  <p class="error_text hide">Password cannot be empty</p> </i>
+           
+            <input type="password" class="password" placeholder="Password" id="password" />
+            
           </label>
           <button id="button">Claim your free trial</button>
           <small
