@@ -96,6 +96,10 @@ input:focus {
   outline: 1.5px solid var(--blue);
 }
 
+.input-error::placeholder {
+  color: var(--red);
+}
+
 button {
   display: block;
   width: 100%;

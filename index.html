@@ -14,6 +14,7 @@
 
     <title>Frontend Mentor | Intro component with sign up form</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="./app.js" defer></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
@@ -33,7 +34,7 @@
           <label for="firstName">
             <div class="error_icon hide">!</div>
            <i>  <p class="error_text hide">First Name cannot be empty</p></i>
-            <input type="text" class="firstName" placeholder="First Name" />
+            <input type="text" class="firstName " placeholder="First Name" />
             
           </label>
           <label for="lastName">
@@ -47,7 +48,7 @@
             <input type="email" class="email" placeholder="Email" />
           </label>
           <label for="password">
-            <div class="reveal_password ">0</div>
+            <div class="reveal_password fa fa-eye password-icon "></div>
             <div class="error_icon hide">!</div>
             <i>  <p class="error_text hide">Password cannot be empty</p> </i>
            

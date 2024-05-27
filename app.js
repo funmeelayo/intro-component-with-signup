@@ -27,6 +27,7 @@ form.addEventListener('submit', (e) => {
     firstName.classList.add('error');
     errorIcon [0].classList.remove("hide");
     errorText[0].classList.remove("hide");
+    firstName.placeholder = '';
   } else {
     firstName.classList.remove('error');
     errorIcon [0].classList.add("hide");
@@ -38,6 +39,7 @@ form.addEventListener('submit', (e) => {
     lastName.classList.add('error');
     errorIcon [1].classList.remove("hide");
     errorText[1].classList.remove("hide");
+    lastName.placeholder = '';
   } else {
     lastName.classList.remove('error');
     errorIcon [1].classList.add("hide");
@@ -49,6 +51,8 @@ form.addEventListener('submit', (e) => {
     email.classList.add('error');
     errorIcon [2].classList.remove("hide");
     errorText[2].classList.remove("hide");
+    email.classList.add('input-error');
+    email.placeholder = 'email@example/com';
   } else {
     email.classList.remove('error');
     errorIcon [2].classList.add("hide");
@@ -61,7 +65,7 @@ form.addEventListener('submit', (e) => {
     password.classList.add('error');
     errorIcon [3].classList.remove("hide");
     errorText[3].classList.remove("hide");
-    revealButton.classList.add("hide")
+    password.placeholder = '';
   } else {
     password.classList.remove('error');
     errorIcon [3].classList.add("hide");
@@ -73,10 +77,16 @@ form.addEventListener('submit', (e) => {
 revealButton.addEventListener( "click", (e) => {
   if (password.type === 'password') {
       password.type = 'text';
+      revealButton.classList.remove('fa-eye');
+      revealButton.classList.add('fa-eye-slash');
   } else {
     password.type = 'password';
+    revealButton.classList.remove('fa-eye-slash');
+    revealButton.classList.add('fa-eye');
   }
+
 }
+
 );
 
 //Validate email
